@@ -110,6 +110,7 @@ prune = true
 [advice]
 setUpstreamFailure = false
 addEmbeddedRepo = false
+mergeConflict = false
 
 [gitbutler]
 gitbutlerCommitter = 1
