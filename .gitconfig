@@ -132,3 +132,5 @@ trustExitCode = true
 	helper = cache
 [maintenance]
 	auto = false
+[pack]
+	usePathWalk = true
