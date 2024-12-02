@@ -134,3 +134,5 @@ forceSignAnnotated = true
 	auto = false
 [pack]
 	usePathWalk = true
+[feature]
+	manyFiles = true
