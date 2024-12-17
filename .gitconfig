@@ -1,6 +1,6 @@
 [user]
-	name = Nikola Hristov
-	email = Nikola@PlayForm.LTD
+name = Nikola Hristov
+email = Nikola@PlayForm.LTD
 signingkey = BAF2F5C7BAAD1367
 
 [filter "lfs"]
@@ -10,7 +10,7 @@ process = git-lfs filter-process
 required = true
 
 [core]
-	autocrlf = true
+autocrlf = true
 fscache = false
 symlinks = false
 excludesfile = "D:\\Developer\\.gitignore"
@@ -88,7 +88,7 @@ prune = true
 autoSetupMerge = true
 
 [alias]
-sync = "!git pull -q ; git push -q"
+sync = "!git pull --no-edit --allow-unrelated-histories --no-progress -q ; git push --no-progress -q"
 ecommit = commit -a --allow-empty-message -m \"\"
 
 [protocol "file"]
@@ -120,19 +120,19 @@ gpgsign = true
 forceSignAnnotated = true
 
 [difftool "sourcetree"]
-	cmd = "'' "
+cmd = "'' "
 
 [mergetool "sourcetree"]
-	cmd = "'' "
-	trustExitCode = true
+cmd = "'' "
+trustExitCode = true
 
 # [submodule]
 # recurse = true
 [credential]
-	helper = cache
+helper = cache
 [maintenance]
-	auto = false
+auto = false
 [pack]
-	usePathWalk = true
+usePathWalk = true
 [feature]
-	manyFiles = true
+manyFiles = true
