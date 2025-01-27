@@ -1,5 +1,8 @@
 {
 	"name": "@base/nikolarhristov",
 	"version": "0.0.1",
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@tailwindcss/postcss": "4.0.0"
+	}
 }
