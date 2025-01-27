@@ -16,8 +16,5 @@
 	"publishConfig": {
 		"access": "public",
 		"provenance": true
-	},
-	"dependencies": {
-		"@tailwindcss/postcss": "4.0.0"
 	}
 }
