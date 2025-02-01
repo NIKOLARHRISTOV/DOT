@@ -2,26 +2,8 @@
 
 Current=$(\cd -- "$(\dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && \pwd)
 
-rm -rf ~/.aliases
-rm -rf ~/.bash_profile
-rm -rf ~/.bash_logout
-rm -rf ~/.bash_history_shared
-rm -rf ~/.bashrc
-rm -rf ~/.bash-preexec.sh
-rm -rf ~/.zshrc
-rm -rf ~/.config
-rm -rf ~/.functions
-rm -rf ~/.gitconfig
-rm -rf ~/.gitmessage
-rm -rf ~/Bash
-rm -rf ~/PowerShell
-rm -rf ~/ZSH
-rm -rf ~/.ssh
-rm -rf ~/prettier.config.js
-rm -rf ~/rustfmt.toml
-rm -rf ~/tailwind.config.js
-rm -rf ~/rome.json
-rm -rf ~/biome.json
+# shellcheck disable=SC1091
+source "$Current/Fn/Remove.sh"
 
 DOTFILE="/home/nikola/Developer/Application/NikolaRHristov/DotFile/"
 
