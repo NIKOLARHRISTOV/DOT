@@ -1,6 +1,10 @@
 #!/bin/bash
 
+Current=$(\cd -- "$(\dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && \pwd)
+
 DOTFILE="$HOME/Developer/Application/NikolaRHristov/DotFile/"
+
+mkdir -p ~/.config
 
 rm -rf ~/.aliases
 rm -rf ~/.bash_profile

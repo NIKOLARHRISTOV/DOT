@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOTFILE="$HOME/Developer/Application/NikolaRHristov/DotFile/"
+Current=$(\cd -- "$(\dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && \pwd)
 
 rm -rf ~/.aliases
 rm -rf ~/.bash_profile
@@ -20,6 +20,8 @@ rm -rf ~/rustfmt.toml
 rm -rf ~/tailwind.config.js
 rm -rf ~/rome.json
 rm -rf ~/biome.json
+
+DOTFILE="$HOME/Developer/Application/NikolaRHristov/DotFile/"
 
 ln -s "$DOTFILE".aliases ~/.aliases
 ln -s "$DOTFILE".bash_profile ~/.bash_profile

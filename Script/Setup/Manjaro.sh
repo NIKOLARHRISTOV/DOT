@@ -1,26 +1,31 @@
 #!/bin/bash
 
-DOTFILE="/home/nikola/Developer/Application/NikolaRHristov/DotFile/"
-
-mkdir -p ~/.config
+Current=$(\cd -- "$(\dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && \pwd)
 
 rm -rf ~/.aliases
 rm -rf ~/.bash_profile
 rm -rf ~/.bash_logout
 rm -rf ~/.bash_history_shared
 rm -rf ~/.bashrc
+rm -rf ~/.bash-preexec.sh
 rm -rf ~/.zshrc
+rm -rf ~/.config
 rm -rf ~/.functions
-rm -rf ~/.git
+rm -rf ~/.gitconfig
 rm -rf ~/.gitmessage
 rm -rf ~/Bash
 rm -rf ~/PowerShell
 rm -rf ~/ZSH
+rm -rf ~/.ssh
 rm -rf ~/prettier.config.js
 rm -rf ~/rustfmt.toml
 rm -rf ~/tailwind.config.js
 rm -rf ~/rome.json
 rm -rf ~/biome.json
+
+DOTFILE="/home/nikola/Developer/Application/NikolaRHristov/DotFile/"
+
+mkdir -p ~/.config
 
 cp "$DOTFILE".gitconfig ~/.gitconfig
 ln -s "$DOTFILE".aliases ~/.aliases
@@ -35,7 +40,7 @@ ln -s "$DOTFILE"Bash ~/Bash
 ln -s "$DOTFILE"PowerShell ~/PowerShell
 ln -s "$DOTFILE"ZSH ~/ZSH
 ln -s "$DOTFILE"biome.json ~/biome.json
-ln -s "$DOTFILE"prettier.config.jsrettier.config.mjs
+ln -s "$DOTFILE"prettier.config.js ~/prettier.config.js
 ln -s "$DOTFILE"rome.json ~/rome.json
 ln -s "$DOTFILE"rustfmt.toml ~/rustfmt.toml
 ln -s "$DOTFILE"tailwind.config.js ~/tailwind.config.js

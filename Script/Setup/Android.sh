@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DotFile="$HOME/Developer/Application/NikolaRHristov/DotFile/"
+Current=$(\cd -- "$(\dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && \pwd)
 
 rm -rf ~/.aliases
 rm -rf ~/.bash_profile
@@ -21,24 +21,26 @@ rm -rf ~/tailwind.config.js
 rm -rf ~/rome.json
 rm -rf ~/biome.json
 
-cp "$DotFile".aliases ~/.aliases
-cp "$DotFile".bash_profile ~/.bash_profile
-cp "$DotFile".bash_logout ~/.bash_logout
-cp "$DotFile".bash_history_shared ~/.bash_history_shared
-cp "$DotFile".zshrc ~/.zshrc
-cp "$DotFile".bashrc ~/.bashrc
-cp "$DotFile".functions ~/.functions
-cp "$DotFile".gitconfig ~/.gitconfig
-cp "$DotFile".gitmessage ~/.gitmessage
-cp "$DotFile"prettier.config.js ~/prettier.config.js
-cp "$DotFile"rome.json ~/rome.json
-cp "$DotFile"biome.json ~/biome.json
-cp "$DotFile"rustfmt.toml ~/rustfmt.toml
-cp "$DotFile"tailwind.config.js ~/tailwind.config.js
-cp "$DotFile".config ~/.config
-cp "$DotFile"Bash ~/Bash
-cp "$DotFile"PowerShell ~/PowerShell
-cp "$DotFile"ZSH ~/ZSH
+DOTFILE="$HOME/Developer/Application/NikolaRHristov/DotFile/"
+
+cp "$DOTFILE".aliases ~/.aliases
+cp "$DOTFILE".bash_profile ~/.bash_profile
+cp "$DOTFILE".bash_logout ~/.bash_logout
+cp "$DOTFILE".bash_history_shared ~/.bash_history_shared
+cp "$DOTFILE".zshrc ~/.zshrc
+cp "$DOTFILE".bashrc ~/.bashrc
+cp "$DOTFILE".functions ~/.functions
+cp "$DOTFILE".gitconfig ~/.gitconfig
+cp "$DOTFILE".gitmessage ~/.gitmessage
+cp "$DOTFILE"prettier.config.js ~/prettier.config.js
+cp "$DOTFILE"rome.json ~/rome.json
+cp "$DOTFILE"biome.json ~/biome.json
+cp "$DOTFILE"rustfmt.toml ~/rustfmt.toml
+cp "$DOTFILE"tailwind.config.js ~/tailwind.config.js
+cp "$DOTFILE".config ~/.config
+cp "$DOTFILE"Bash ~/Bash
+cp "$DOTFILE"PowerShell ~/PowerShell
+cp "$DOTFILE"ZSH ~/ZSH
 
 # rm ~/Developer/.clang-format
 # rm ~/Developer/.csharpierrc
@@ -53,15 +55,15 @@ cp "$DotFile"ZSH ~/ZSH
 # rm ~/Developer/rustfmt.toml
 # rm ~/Developer/tsconfig.json
 
-# ln -s "$DotFile".clang-format ~/Developer/.clang-format
-# ln -s "$DotFile".csharpierrc ~/Developer/.csharpierrc
-# ln -s "$DotFile".editorconfig ~/Developer/.editorconfig
-# ln -s "$DotFile".jshintrc ~/Developer/.jshintrc
-# ln -s "$DotFile".npmrc ~/Developer/.npmrc
-# ln -s "$DotFile".prettierignore ~/Developer/.prettierignore
-# ln -s "$DotFile".stylua.toml ~/Developer/.stylua.toml
-# ln -s "$DotFile"jsconfig.json ~/Developer/jsconfig.json
-# ln -s "$DotFile"rome.json ~/Developer/rome.json
-# ln -s "$DotFile"biome.json ~/Developer/biome.json
-# ln -s "$DotFile"rustfmt.toml ~/Developer/rustfmt.toml
-# ln -s "$DotFile"tsconfig.json ~/Developer/tsconfig.json
+# ln -s "$DOTFILE".clang-format ~/Developer/.clang-format
+# ln -s "$DOTFILE".csharpierrc ~/Developer/.csharpierrc
+# ln -s "$DOTFILE".editorconfig ~/Developer/.editorconfig
+# ln -s "$DOTFILE".jshintrc ~/Developer/.jshintrc
+# ln -s "$DOTFILE".npmrc ~/Developer/.npmrc
+# ln -s "$DOTFILE".prettierignore ~/Developer/.prettierignore
+# ln -s "$DOTFILE".stylua.toml ~/Developer/.stylua.toml
+# ln -s "$DOTFILE"jsconfig.json ~/Developer/jsconfig.json
+# ln -s "$DOTFILE"rome.json ~/Developer/rome.json
+# ln -s "$DOTFILE"biome.json ~/Developer/biome.json
+# ln -s "$DOTFILE"rustfmt.toml ~/Developer/rustfmt.toml
+# ln -s "$DOTFILE"tsconfig.json ~/Developer/tsconfig.json
