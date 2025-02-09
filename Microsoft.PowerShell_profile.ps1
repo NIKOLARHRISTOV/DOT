@@ -17,4 +17,4 @@ if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
 
-Import-Module 'C:\Program Files\Microsoft Visual Studio\2022\Preview\VC\vcpkg\scripts\posh-vcpkg'
+Import-Module 'C:\Program Files\Microsoft Visual Studio\2022\Community\VC\vcpkg\scripts\posh-vcpkg'
