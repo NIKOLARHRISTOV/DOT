@@ -6,6 +6,7 @@
 			"**/Documentation/**/*",
 			"**/Target/**/*",
 			"**/dist/**/*",
+			"**/Test/**/*",
 			"package.json"
 		],
 		"maxSize": 10000000
