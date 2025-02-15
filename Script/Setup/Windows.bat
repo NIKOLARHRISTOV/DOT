@@ -88,7 +88,7 @@ cp D:\Developer\Application\NikolaRHristov\DotFile\.gitconfig C:\msys64\home\Nik
 mklink C:\Users\Nikola\.gitmessage D:\Developer\Application\NikolaRHristov\DotFile\.gitmessage
 mklink C:\msys64\home\Nikola\.gitmessage D:\Developer\Application\NikolaRHristov\DotFile\.gitmessage
 
-mklink C:\Users\Nikola\prettier.config.mjs D:\Developer\Application\NikolaRHristov\DotFile\Configuration\prettier.config.mjs
+mklink C:\Users\Nikola\prettier.config.mjs D:\Developer\Application\NikolaRHristov\DotFile\.config\base\prettier.config.mjs
 mklink C:\Users\Nikola\.prettierignore D:\Developer\Application\NikolaRHristov\DotFile\Configuration\.prettierignore
 mklink C:\msys64\home\Nikola\prettier.config.mjs D:\Developer\Application\NikolaRHristov\DotFile\Configuration\prettier.config.mjs
 

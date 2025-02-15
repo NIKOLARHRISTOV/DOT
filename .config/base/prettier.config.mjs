@@ -30,6 +30,12 @@ export default {
 	tailwindConfig: "./tailwind.config.js",
 	overrides: [
 		{
+			files: "*.mjs",
+			options: {
+				parser: "babel",
+			},
+		},
+		{
 			files: "*.astro",
 			options: {
 				parser: "astro",
